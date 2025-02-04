@@ -30,7 +30,7 @@ window.onload = function () {
     // Gere numero aleatorio que define o wallpaper
 
     const randomWallpaper = Math.floor(Math.random() * 9);
-    document.body.style.backgroundImage = `url('imgs/backGround/${randomWallpaper}.jpg')`;
+    document.body.style.backgroundImage = `url('imgs/backGround/${randomWallpaper}.webp')`;
 
     // Inicializa o embaralhamento ao carregar a página
     shuffleSections();

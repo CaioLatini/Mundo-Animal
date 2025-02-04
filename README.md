@@ -1,4 +1,4 @@
-# [🐾 Explore o Mundo Animal 🐾](https://caiolatini.github.io/Animais/)
+# [🐾 Explore o Mundo Animal 🐾](https://caiolatini.github.io/Mundo-Animal/)
 
 ## 🐒 Sobre o Projeto
 Bem-vindo ao Mundo Animal, site criado especialmente para crianças curiosas! Essa será uma aventura cheia de curiosidades, rigidos🐯 e cenas incríveis. Vamos explorar juntos o reino animal de forma educativa e divertida! 🌍✨
