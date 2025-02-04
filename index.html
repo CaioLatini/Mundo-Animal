@@ -162,7 +162,7 @@
         <div class="popup-content">
             <h2>Login</h2>
             <form id="loginForm">
-                <label for="username">Usuário</label>
+                <label for="username">CPF</label>
                 <input type="text" id="username" name="username" required>
     
                 <label for="password">Senha</label>
@@ -171,17 +171,16 @@
                 <button id="loginBtn" type="submit">Entrar</button>
             </form>
             <div class="popup-links">
-                <a href="#">Cadastrar-se</a>
-                <a href="#">Esqueci minha senha</a>
+                <a id="cadasterBtn" href="#">Cadastrar-se</a>
+                <a id="recoverBtn" href="#">Esqueci minha senha</a>
             </div>
         </div>
     </div>    
     <!-- Popup de Cadastro -->
-    <div id="registerPopup" class="hidden">
+    <div id="cadasterPopup" class="hidden">
         <div class="popup-content">
-            <span class="close-btn">&times;</span>
             <h2>Cadastro</h2>
-            <form id="registerForm">
+            <form id="cadasterForm">
                 <label for="name">Nome</label>
                 <input type="text" id="name" name="name" required>
 
@@ -197,10 +196,38 @@
                 <label for="confirmPassword">Confirmar Senha</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-                <button type="submit">Cadastrar</button>
+                <button id="confirmBtn"type="submit">Cadastrar</button>
             </form>
             <div class="popup-links">
-                <a href="#" id="backToLogin">Voltar para Login</a>
+                <a href="#" id="backToLogin">Login</a>
+            </div>
+        </div>
+    </div>
+    <!-- Popup de Recuperação de Senha -->
+    <div id="recoverPopup" class="hidden">
+        <div class="popup-content">
+            <h2>Recuperação</h2>
+            <form id="recoverForm">
+                <label for="cpfRecovery">CPF</label>
+                <input id="cpfRecovery" name="cpfRecovery" required>
+
+                <button id="sendCodeBtn" type="submit">Recuperar</button>
+            </form>
+            <form id="recoveryCodeForm">
+                <label for="recoveryCode">Código de Recuperação</label>
+                <input type="text" id="recoveryCode" name="recoveryCode" required>
+
+                <!-- <button id="confirmRecoveryCodeBtn" type="submit">Confirmar</button>
+            <form id="newPasswordForm" class="hidden">
+                <label for="newPassword">Nova Senha</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+
+                <label for="confirmNewPassword">Confirmar Nova Senha</label>
+                <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+
+                <button id="confirmNewPasswordBtn" type="submit">Confirmar</button> -->
+            <div class="popup-links">
+                <a href="#" id="backToLogin2">Login</a>
             </div>
         </div>
     </div>

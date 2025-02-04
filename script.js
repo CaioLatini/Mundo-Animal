@@ -62,28 +62,76 @@ window.onload = function () {
         animalVideo.currentTime = 0;
     });
 };
-    // login provisorio
-    document.addEventListener("DOMContentLoaded", function() {
-        const loginForm = document.getElementById("loginForm");
-    
-        loginForm.addEventListener("submit", function(event) {
-            event.preventDefault();
-    
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-    
-            if (username === "admin" && password === "admin") {
-                alert("Login bem-sucedido!");
-                document.getElementById("loginPopup").classList.add("hidden");
-                document.body.classList.remove("blurred"); // Remove o efeito de blur (caso exista)
-            } else {
-                alert("Usuário ou senha incorretos!");
-            }
-            
-        });
+// login provisorio
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("loginForm");
+
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "admin" && password === "admin") {
+            alert("Login bem-sucedido!");
+            document.getElementById("loginPopup").classList.add("hidden");
+            document.body.classList.remove("blurred"); // Remove o efeito de blur (caso exista)
+        } else {
+            alert("Usuário ou senha incorretos!");
+        }
+
     });
-    
-    
+});
+// Cadatro Provisorio
+const cadasterBtn = document.getElementById("cadasterBtn");
+const backToLogin = document.getElementById("backToLogin");
+
+cadasterBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Oculta o loginPopup
+    document.getElementById("loginPopup").classList.add("hidden");
+
+    // Exibe o CadasterPopup
+    document.getElementById("cadasterPopup").classList.remove("hidden");
+});
+
+backToLogin.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Oculta o loginPopup
+    document.getElementById("cadasterPopup").classList.add("hidden");
+
+    // Exibe o CadasterPopup
+    document.getElementById("loginPopup").classList.remove("hidden");
+});
+
+// Recuperacao provisoria
+const recoverBtn = document.getElementById("recoverBtn");
+const backToLogin2 = document.getElementById("backToLogin2");
+
+recoverBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Oculta o loginPopup
+    document.getElementById("loginPopup").classList.add("hidden");
+
+    // Exibe o CadasterPopup
+    document.getElementById("recoverPopup").classList.remove("hidden");
+});
+backToLogin2.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Oculta o loginPopup
+    document.getElementById("recoverPopup").classList.add("hidden");
+
+    // Exibe o CadasterPopup
+    document.getElementById("loginPopup").classList.remove("hidden");
+});
+
+
+
+
 
 
 
