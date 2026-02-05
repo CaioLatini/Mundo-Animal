@@ -128,6 +128,12 @@ backToLogin2.addEventListener("click", function (event) {
     // Exibe o CadasterPopup
     document.getElementById("loginPopup").classList.remove("hidden");
 });
+// Acessar sem conta
+document.getElementById("skipLoginBtn").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("loginPopup").classList.add("hidden");
+    document.body.classList.remove("blurred");
+});
 
 
 
